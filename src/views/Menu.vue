@@ -1,5 +1,7 @@
 <template>
-    <MenuComponent :antipasti="antipasti" :primi="primi" :secondi="secondi" />
+    <div class="menu-wrapper">
+        <MenuComponent :antipasti="antipasti" :primi="primi" :secondi="secondi" />
+    </div>
 </template>
 
 <script>
@@ -56,5 +58,8 @@ export default {
 </script>
 
 <style>
-
+.menu-wrapper
+{
+    margin: 1rem;
+}
 </style>

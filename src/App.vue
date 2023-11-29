@@ -1,22 +1,20 @@
 <template>
   <div class="appBody">
+  </div>
     <header>
       <h1>A Taste of Italy</h1>
     </header>
     <nav>
-      <router-link :to="{ name: 'Home' }">Home</router-link> <span>|</span>
       <router-link :to="{ name: 'Menu' }">Menu</router-link> <span>|</span>
       <router-link :to="{ name: 'Order' }">Order</router-link>
     </nav>
     <router-view/>
-  </div>
 </template>
 
 <style>
 @import url('https://fonts.cdnfonts.com/css/snell-roundhand');
 
 header {
-    margin: 10px auto;
     text-align: center;
 }
 
@@ -42,10 +40,13 @@ a {
 }
 
 .appBody {
+  position: fixed;
   background-image: url('https://images.squarespace-cdn.com/content/v1/602833744a96866dbf7ed823/1613785053618-26RRLU2BJOQ29U15TZ0E/SecretSupper_WinePairingRecipes_CacioePepe_003_LR_photocredit_CarlyDiaz.jpg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100vw;
   height: 100vh;
+  z-index: -1;
 
   /* following code taken from https://stackoverflow.com/a/34702639/21643912 and modified for this project */    
   &:before {
