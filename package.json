@@ -15,5 +15,17 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-service": "~5.0.0"
-  }
+  },
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/choisauce/codedex_finalProjectVue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/choisauce/codedex_finalProjectVue/issues"
+  },
+  "homepage": "https://github.com/choisauce/codedex_finalProjectVue#readme"
 }
